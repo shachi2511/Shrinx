@@ -1,168 +1,116 @@
-# ShrinX AI Study Assistant
+ShrinX AI Study Assistant
 
-**SHRINK THE STUDYING, EXPAND THE LEARNING!**
+📚 SHRINK THE STUDYING, EXPAND THE LEARNING 🚀
 
-An AI-powered study assistant that transforms PDF documents into comprehensive study materials including summaries, notes, flashcards, and interactive quizzes.
+ShrinX is an AI-powered study buddy that transforms boring PDFs into summaries, detailed notes, flashcards, and interactive quizzes. Whether you’re cramming for exams or just revising, ShrinX helps you learn smarter, not harder.
 
-## Features
+✨ Features
+Core Functionality
 
-### Core Functionality
-- **PDF Text Extraction**: Extract text from PDF documents using PyPDF2 or pdfplumber
-- **AI-Powered Content Generation**: Uses Anthropic's Claude API to generate study materials
-- **Multiple Study Formats**: Creates summaries, detailed notes, flashcards, and various quiz types
-- **Dual Interface**: Both GUI and terminal versions available
+PDF Text Extraction: Extracts clean text from PDFs with PyPDF2 or pdfplumber
 
-### Study Materials Generated
-- **Summaries**: Concise overviews of PDF content
-- **Detailed Notes**: Comprehensive study notes with bullet points and key concepts
-- **Flashcards**: Interactive flashcard system with spaced repetition
-- **Multiple Choice Questions**: AI-generated MCQ quizzes with explanations
-- **Fill-in-the-Blank**: Cloze deletion exercises
-- **True/False Questions**: Binary choice quizzes with explanations
-- **Q&A Pairs**: Detailed question-answer sets
+AI-Powered Generation: Uses Anthropic’s Claude API to create study materials
 
-## Installation
+Multiple Formats: Generates summaries, notes, flashcards, and quizzes
 
-### Prerequisites
-- Python 3.6 or higher
-- Anthropic API key
+Dual Interface: Run ShrinX in the terminal (full power) or GUI (quick use)
 
-### Required Dependencies
-```bash
-pip install anthropic PyPDF2 python-dotenv
-```
+Study Materials Generated
 
-### Optional Dependencies
-```bash
-pip install pdfplumber  # Better PDF text extraction
-pip install tkinter     # GUI support (usually included with Python)
-```
+📖 Summaries – Quick overviews of PDF chapters
 
-### Setup
-1. Clone this repository
-2. Install dependencies: `pip install -r requirements.txt`
-3. Create a `.env` file with your API key:
-   ```
-   ANTHROPIC_API_KEY=your_api_key_here
-   ```
+📝 Detailed Notes – Bullet points + key concepts
 
-## Usage
+🎴 Flashcards – Spaced repetition friendly
 
-### GUI Version (Limited Features)
-```bash
-python main_launcher.py
-```
-or
-```bash
-python shrinx_gui.py
-```
+🎯 MCQs – Multiple choice quizzes with explanations
 
-The GUI version provides:
-- PDF upload interface
-- Topic browsing
-- Content viewing (summaries, notes, Q&A)
-- Basic navigation
+✍️ Fill-in-the-Blank – Cloze exercises
 
-### Terminal Version (Full Features)
-```bash
-python main.py
-```
+✅ True/False Questions – Binary quizzes with reasoning
 
-The terminal version includes all features:
-- Interactive flashcard study sessions
-- Complete quiz systems (MCQ, Fill-in-blanks, True/False)
-- Advanced study session management
-- Progress tracking
-- Content review and management
+❓ Q&A Pairs – Question-answer sets for deeper recall
 
-## Project Structure
+🛠 Tech Stack
 
-```
-shrinx/
-├── main.py                 # Terminal interface (full features)
-├── main_launcher.py        # Simple launcher with fallbacks
-├── shrinx_gui.py          # GUI interface (basic features)
-├── ai_utils.py            # AI content generation functions
-├── pdf_utils.py           # PDF text extraction utilities
-├── quiz_system.py         # Interactive quiz functionality
-├── flashcard_system.py    # Flashcard study system
-├── run_gui.py             # GUI launcher
-├── requirements.txt       # Python dependencies
-├── .env                   # API key configuration (create this)
-└── README.md             # This file
-```
+Python 3.6+
 
-## How It Works
+Libraries:
 
-1. **Upload PDF**: Select a PDF document containing study material
-2. **Text Extraction**: System extracts text using PDF processing libraries
-3. **AI Processing**: Claude API generates multiple study formats from the extracted text
-4. **Study Sessions**: Use interactive tools to study the generated content
-5. **Progress Tracking**: Monitor your learning progress across different topics
+anthropic (Claude API)
 
-## Terminal vs GUI Features
+PyPDF2 / pdfplumber
 
-### Available in Both
-- PDF upload and processing
-- Content generation (summaries, notes, questions)
-- Topic management
-- Content viewing
+tkinter (GUI)
 
-### Terminal-Only Features
-- **Interactive Flashcards**: Full flashcard study sessions with progress tracking
-- **Complete Quiz System**: MCQ, fill-in-blanks, and true/false quizzes with scoring
-- **Advanced Study Sessions**: Detailed progress tracking and session management
-- **Content Management**: Advanced file and topic organization
-
-## Configuration
-
-Create a `.env` file in the project root:
-```env
-ANTHROPIC_API_KEY=your_anthropic_api_key_here
-```
-
-Get your API key from [Anthropic's website](https://console.anthropic.com/).
-
-## Supported File Types
-
-- PDF documents (.pdf)
-- Text content extraction from various PDF formats
-
-## Future Enhancements
-
-- **Full GUI Quiz Implementation**: Complete interactive quiz system in the GUI
-- **GUI Flashcard Study**: Interactive flashcard sessions with visual progress tracking
-- **Spaced Repetition Algorithm**: Intelligent flashcard scheduling based on performance
-- **Study Progress Analytics**: Detailed performance tracking and learning analytics
-- **Export Functionality**: Export study materials to various formats (Anki, Word, etc.)
-- **Collaborative Features**: Share and collaborate on study materials
-- **Mobile App**: Native mobile application for on-the-go studying
-- **Voice Integration**: Audio playback of study materials and voice-activated quizzes
-- **Multiple AI Models**: Support for different AI providers and models
-- **Advanced PDF Support**: Better handling of complex PDF layouts, images, and tables
-- **Study Schedule Management**: Automated study session planning and reminders
-- **Offline Mode**: Local processing without requiring internet connection
-
-## Troubleshooting
-
-### Common Issues
-
-1. **API Key Error**: Ensure your `.env` file contains a valid Anthropic API key
-2. **PDF Processing Error**: Try installing pdfplumber for better PDF support: `pip install pdfplumber`
-3. **GUI Not Starting**: Make sure tkinter is installed (usually comes with Python)
-4. **Module Import Errors**: Install all dependencies: `pip install -r requirements.txt`
+dotenv (API key management)
 
 
-## License
+🎮 Interfaces
+GUI (Quick + Simple)
 
-Educational use project. Please respect API usage limits and terms of service.
+Upload PDFs
 
-## Acknowledgments
+Browse topics
 
-- Built with Anthropic's Claude API for intelligent content generation
-- PDF processing powered by PyPDF2 and pdfplumber
-- GUI built with Python's tkinter framework
+View summaries, notes, and Q&A
 
----
+Terminal (Full Power Mode)
 
-**Note**: The terminal version provides full functionality including interactive quizzes and flashcards. The GUI version currently offers basic features with advanced functionality planned for future releases.
+Interactive flashcards with progress tracking
+
+Complete quiz system (MCQ, Fill-in-the-Blank, True/False)
+
+Advanced study session management
+
+Topic/content organization
+
+📈 How It Works
+
+Upload PDF → ShrinX extracts the text
+
+AI Processing → Claude generates summaries, notes, and quizzes
+
+Study Time → Use flashcards, quizzes, and review tools
+
+Track Progress → Monitor your learning over sessions
+
+🚀 Future Enhancements
+
+🌐 Full-featured GUI (with quizzes + flashcards)
+
+🧠 Spaced repetition algorithm
+
+📊 Study analytics + performance insights
+
+📤 Export to Anki, Word, or mobile apps
+
+🤝 Collaborative study modes
+
+📱 Mobile app version
+
+🔊 Voice integration for audio-based studying
+
+🔒 Offline mode for local-only use
+
+🐞 Troubleshooting
+
+API Key Error → Check your .env file for a valid Anthropic key
+
+PDF Not Extracting Well → Install pdfplumber for better parsing
+
+GUI Won’t Start → Ensure tkinter is installed (usually bundled)
+
+Import Errors → Run pip install -r requirements.txt
+
+📜 License
+
+Educational use only. Please follow Anthropic’s API terms of service.
+
+🙌 Acknowledgments
+
+Built on Anthropic’s Claude API
+
+PDF parsing powered by PyPDF2 + pdfplumber
+
+GUI built with tkinter
