@@ -152,20 +152,6 @@ Get your API key from [Anthropic's website](https://console.anthropic.com/).
 3. **GUI Not Starting**: Make sure tkinter is installed (usually comes with Python)
 4. **Module Import Errors**: Install all dependencies: `pip install -r requirements.txt`
 
-### System Requirements
-
-- **Python**: 3.6 or higher
-- **Memory**: 4GB RAM minimum for processing large PDFs
-- **Storage**: Varies based on PDF size and generated content
-- **Internet**: Required for AI content generation
-
-## Contributing
-
-This is an educational project. Contributions welcome for:
-- Bug fixes and improvements
-- New study format implementations
-- GUI enhancements
-- Additional PDF processing capabilities
 
 ## License
 
