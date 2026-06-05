@@ -1,0 +1,6 @@
+anthropic
+flask
+werkzeug
+python-dotenv
+PyPDF2
+pdfplumber
