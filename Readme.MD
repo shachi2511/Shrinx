@@ -2,7 +2,7 @@
 
 Upload a PDF. Get summaries, flashcards, and quizzes — instantly.
 
-![Home](screenshots/HomePage.png)
+![Home](Screenshots/HomePage.png)
 
 ---
 
@@ -16,13 +16,13 @@ ShrinX extracts text from any PDF, constructs structured prompts, and calls the 
 
 ## Screenshots
 
-![Upload](screenshots/pdf_upload.png)
+![Upload](Screenshots/pdf_upload.png)
 
-![Summary](screenshots/Summary.png)
+![Summary](Screenshots/Summary.png)
 
-![Flashcards](screenshots/FlashCard.png)
+![Flashcards](Screenshots/FlashCard.png)
 
-![Quiz](screenshots/quiz.png)
+![Quiz](Screenshots/quiz.png)
 
 ---
 
